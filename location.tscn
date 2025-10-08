@@ -1,0 +1,538 @@
+[gd_scene load_steps=178 format=3 uid="uid://jdwd0vnx06jl"]
+
+[ext_resource type="Script" uid="uid://bf51vuv62agow" path="res://location.gd" id="1_4281l"]
+[ext_resource type="PackedScene" uid="uid://ccseqbnqsc3gs" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Balcony_Cross_Corner.gltf" id="2_tsolc"]
+[ext_resource type="PackedScene" uid="uid://4a7476olhxs8" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Balcony_Cross_Straight.gltf" id="3_1yw5d"]
+[ext_resource type="PackedScene" uid="uid://cqwdil7w7838i" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Balcony_Simple_Corner.gltf" id="4_al6pm"]
+[ext_resource type="PackedScene" uid="uid://b1xtxjiaa33wj" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Balcony_Simple_Straight.gltf" id="5_nrixm"]
+[ext_resource type="PackedScene" uid="uid://dghwr5tblgcwr" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Corner_ExteriorWide_Brick.gltf" id="6_23hgp"]
+[ext_resource type="PackedScene" uid="uid://cwk7emkb3on80" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Corner_ExteriorWide_Wood.gltf" id="7_w2ok4"]
+[ext_resource type="PackedScene" uid="uid://bq800oo0hhtj2" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Corner_Exterior_Brick.gltf" id="8_ndwtm"]
+[ext_resource type="PackedScene" uid="uid://dkoiv7mp4alvc" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Corner_Exterior_TopDown.gltf" id="9_0fv51"]
+[ext_resource type="PackedScene" uid="uid://csjd1c5qrsvm5" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Corner_Exterior_TopOnly.gltf" id="10_sqrtf"]
+[ext_resource type="PackedScene" uid="uid://b6dpdblsoraui" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Corner_Exterior_Wood.gltf" id="11_pbcvc"]
+[ext_resource type="PackedScene" uid="uid://b6qtw48gx8iwq" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Corner_Interior_Big.gltf" id="12_yj57s"]
+[ext_resource type="PackedScene" uid="uid://crchgoy854pte" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Corner_Interior_Small.gltf" id="13_ax4dq"]
+[ext_resource type="PackedScene" uid="uid://dlpdhwp25hix7" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/DoorFrame_Flat_Brick.gltf" id="14_n35o4"]
+[ext_resource type="PackedScene" uid="uid://dcvke6sf6lmdj" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/DoorFrame_Flat_WoodDark.gltf" id="15_dgw7h"]
+[ext_resource type="PackedScene" uid="uid://ceogontf3tunj" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/DoorFrame_Round_Brick.gltf" id="16_3brfm"]
+[ext_resource type="PackedScene" uid="uid://gc4ahtyom4wl" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/DoorFrame_Round_WoodDark.gltf" id="17_vpjlu"]
+[ext_resource type="PackedScene" uid="uid://cvdr6ik3sqrb0" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Door_1_Flat.gltf" id="18_fg3tg"]
+[ext_resource type="PackedScene" uid="uid://mt6gao1ps7np" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Door_1_Round.gltf" id="19_pwbpy"]
+[ext_resource type="PackedScene" uid="uid://dth38v8v8jiyr" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Door_2_Flat.gltf" id="20_wmgww"]
+[ext_resource type="PackedScene" uid="uid://s6u67fgscxxq" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Door_2_Round.gltf" id="21_nqx3s"]
+[ext_resource type="PackedScene" uid="uid://cypbo81pndmhk" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Door_4_Flat.gltf" id="22_udbes"]
+[ext_resource type="PackedScene" uid="uid://bp1w2t6pke8jb" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Door_4_Round.gltf" id="23_elp6o"]
+[ext_resource type="PackedScene" uid="uid://blyjfqjyapdrd" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Door_8_Flat.gltf" id="24_obsi5"]
+[ext_resource type="PackedScene" uid="uid://b04w5jgevhpod" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Door_8_Round.gltf" id="25_xkjk6"]
+[ext_resource type="PackedScene" uid="uid://d1qhmajg65h2i" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_Brick.gltf" id="26_s6ujq"]
+[ext_resource type="PackedScene" uid="uid://d0mnaoa5aq2ee" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_RedBrick.gltf" id="27_7sk8p"]
+[ext_resource type="PackedScene" uid="uid://pktxrbreivfc" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_UnevenBrick.gltf" id="28_evsvr"]
+[ext_resource type="PackedScene" uid="uid://by22kc61ke7l3" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_WoodDark.gltf" id="29_yunki"]
+[ext_resource type="PackedScene" uid="uid://cudb5t18e03e7" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_WoodDark_Half1.gltf" id="30_tcouk"]
+[ext_resource type="PackedScene" uid="uid://dr632vrrlp6ot" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_WoodDark_Half2.gltf" id="31_gkyjr"]
+[ext_resource type="PackedScene" uid="uid://bcoc7nlhoajc" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_WoodDark_Half3.gltf" id="32_tji6n"]
+[ext_resource type="PackedScene" uid="uid://cbj5eqiqxxqkg" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_WoodDark_OverhangCorner2.gltf" id="33_lljkc"]
+[ext_resource type="PackedScene" uid="uid://clde5q20otaed" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_WoodDark_OverhangCorner.gltf" id="34_xn31k"]
+[ext_resource type="PackedScene" uid="uid://dmfyojpwccye4" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_WoodLight.gltf" id="35_t5ex1"]
+[ext_resource type="PackedScene" uid="uid://5o3ufj6044l" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_WoodLight_OverhangCorner2.gltf" id="36_ao8u8"]
+[ext_resource type="PackedScene" uid="uid://c1phqv8huk4c2" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Floor_WoodLight_OverhangCorner.gltf" id="37_iykry"]
+[ext_resource type="PackedScene" uid="uid://bmjixj34oykrr" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/HoleCover_90Angle.gltf" id="38_kfkxd"]
+[ext_resource type="PackedScene" uid="uid://dqy5ayyiw1gu5" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/HoleCover_90Half.gltf" id="39_pua5y"]
+[ext_resource type="PackedScene" uid="uid://dirre4kyrrocf" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/HoleCover_90Stairs.gltf" id="40_li5c7"]
+[ext_resource type="PackedScene" uid="uid://dnprfrpj4p2mj" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/HoleCover_Straight.gltf" id="41_tb0me"]
+[ext_resource type="PackedScene" uid="uid://f838ljumocfs" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/HoleCover_StraightHalf.gltf" id="42_y5sq1"]
+[ext_resource type="PackedScene" uid="uid://wtl7i5nr62t8" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Plaster_Corner.gltf" id="43_0olgu"]
+[ext_resource type="PackedScene" uid="uid://dbispqjvyngpb" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Plaster_Corner_Front.gltf" id="44_0wvrw"]
+[ext_resource type="PackedScene" uid="uid://b2vhynflgaba0" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Plaster_Long.gltf" id="45_j47pa"]
+[ext_resource type="PackedScene" uid="uid://cu062yk4077tc" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Plaster_Short.gltf" id="46_4lslq"]
+[ext_resource type="PackedScene" uid="uid://b3f3iwrgj16vc" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_RoofIncline_Plaster.gltf" id="47_y8ely"]
+[ext_resource type="PackedScene" uid="uid://bsuiot8c46pkp" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_RoofIncline_UnevenBricks.gltf" id="48_bhty5"]
+[ext_resource type="PackedScene" uid="uid://csvmgp1ojga7p" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Roof_Plaster.gltf" id="49_hqowu"]
+[ext_resource type="PackedScene" uid="uid://75cktti4rjox" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Roof_UnevenBricks.gltf" id="50_5wm2v"]
+[ext_resource type="PackedScene" uid="uid://cmao5n2ukvrhd" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Side_Plaster_Long_L.gltf" id="51_a6fxw"]
+[ext_resource type="PackedScene" uid="uid://bhl0724gx7f0x" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Side_Plaster_Long_R.gltf" id="52_pxv0b"]
+[ext_resource type="PackedScene" uid="uid://c3g1om7iyhsmt" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Side_Plaster_Short_L.gltf" id="53_wrjeg"]
+[ext_resource type="PackedScene" uid="uid://bonwtujcnmrci" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Side_Plaster_Short_R.gltf" id="54_ajjwy"]
+[ext_resource type="PackedScene" uid="uid://b7lvsk1ch5esd" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Side_UnevenBrick_Long_L.gltf" id="55_6semv"]
+[ext_resource type="PackedScene" uid="uid://bx3w2l58hf85v" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Side_UnevenBrick_Long_R.gltf" id="56_8tvqw"]
+[ext_resource type="PackedScene" uid="uid://56ud0vjgvj1m" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Side_UnevenBrick_Short_L.gltf" id="57_h63po"]
+[ext_resource type="PackedScene" uid="uid://dkctqp3owjfrq" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_Side_UnevenBrick_Short_R.gltf" id="58_6noex"]
+[ext_resource type="PackedScene" uid="uid://exjvlm68p1jr" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_UnevenBrick_Corner.gltf" id="59_wx1jo"]
+[ext_resource type="PackedScene" uid="uid://bma42d7a355bp" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_UnevenBrick_Corner_Front.gltf" id="60_w7ko5"]
+[ext_resource type="PackedScene" uid="uid://bo3qqmyrdlrxb" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_UnevenBrick_Long.gltf" id="61_cu51j"]
+[ext_resource type="PackedScene" uid="uid://dpit7fgl4aoh0" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Overhang_UnevenBrick_Short.gltf" id="62_ueg04"]
+[ext_resource type="PackedScene" uid="uid://dfxt62ingicm4" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Brick1.gltf" id="63_rp3ce"]
+[ext_resource type="PackedScene" uid="uid://dosxdmr8yt1vg" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Brick2.gltf" id="64_qwo0g"]
+[ext_resource type="PackedScene" uid="uid://g02kbsm3m4mq" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Brick3.gltf" id="65_caq87"]
+[ext_resource type="PackedScene" uid="uid://okacm2ojvlju" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Brick4.gltf" id="66_86i5c"]
+[ext_resource type="PackedScene" uid="uid://b6l4kk5r7ecb4" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Chimney2.gltf" id="67_c1hq6"]
+[ext_resource type="PackedScene" uid="uid://d4h4gonsyb86l" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Chimney.gltf" id="68_202a6"]
+[ext_resource type="PackedScene" uid="uid://dop7t5g8kr1vs" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Crate.gltf" id="69_mns1d"]
+[ext_resource type="PackedScene" uid="uid://cjq71wonwl5m6" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_ExteriorBorder_Corner.gltf" id="70_0ndml"]
+[ext_resource type="PackedScene" uid="uid://qsuaaaiq822t" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_ExteriorBorder_Straight1.gltf" id="71_57258"]
+[ext_resource type="PackedScene" uid="uid://ctc40nnt21n6j" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_ExteriorBorder_Straight2.gltf" id="72_vw0kf"]
+[ext_resource type="PackedScene" uid="uid://dga81anyh5ypi" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_MetalFence_Ornament.gltf" id="73_diwd2"]
+[ext_resource type="PackedScene" uid="uid://bk85e0lc7year" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_MetalFence_Simple.gltf" id="74_e1wug"]
+[ext_resource type="PackedScene" uid="uid://skqig6011vb1" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Support.gltf" id="75_85kys"]
+[ext_resource type="PackedScene" uid="uid://fypl1ma3mtgp" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Vine1.gltf" id="76_4wsk3"]
+[ext_resource type="PackedScene" uid="uid://dqm3wypx6mlyu" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Vine2.gltf" id="77_0r3rl"]
+[ext_resource type="PackedScene" uid="uid://6btyv1uiyqs3" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Vine4.gltf" id="78_fx0q1"]
+[ext_resource type="PackedScene" uid="uid://bs6yu3tn2g1ig" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Vine5.gltf" id="79_1e7wh"]
+[ext_resource type="PackedScene" uid="uid://dn6xk4fbv1xsu" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Vine6.gltf" id="80_cybmu"]
+[ext_resource type="PackedScene" uid="uid://shg6njnkei3m" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Vine9.gltf" id="81_1ko24"]
+[ext_resource type="PackedScene" uid="uid://dosc6or8hjs7a" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_Wagon.gltf" id="82_socal"]
+[ext_resource type="PackedScene" uid="uid://ddap1vjmgog1v" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_WoodenFence_Extension1.gltf" id="83_munu0"]
+[ext_resource type="PackedScene" uid="uid://bf3p4ckt2yf7f" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_WoodenFence_Extension2.gltf" id="84_3waip"]
+[ext_resource type="PackedScene" uid="uid://jgvi3tlcjsxd" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Prop_WoodenFence_Single.gltf" id="85_cg0pd"]
+[ext_resource type="PackedScene" uid="uid://qxx5g6ysryby" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_2x4_RoundTile.gltf" id="86_lh7uj"]
+[ext_resource type="PackedScene" uid="uid://bd7a57pp3oixa" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Dormer_RoundTile.gltf" id="87_nquds"]
+[ext_resource type="PackedScene" uid="uid://b2ashxjgyb18v" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_FrontSupports.gltf" id="88_8a7vd"]
+[ext_resource type="PackedScene" uid="uid://nwux8dmx06ln" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick2.gltf" id="89_puyu3"]
+[ext_resource type="PackedScene" uid="uid://tmyewjqyp5yj" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick4.gltf" id="90_6ow0x"]
+[ext_resource type="PackedScene" uid="uid://bq3wad16e718t" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick4_Half_L.gltf" id="91_y8wla"]
+[ext_resource type="PackedScene" uid="uid://clfh7bqag0r87" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick4_Half_R.gltf" id="92_jlh2y"]
+[ext_resource type="PackedScene" uid="uid://ccpa7sf2f2s5k" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick6.gltf" id="93_4me5o"]
+[ext_resource type="PackedScene" uid="uid://svhnxi4d6yiq" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick6_Half_L.gltf" id="94_4d36y"]
+[ext_resource type="PackedScene" uid="uid://gvjqr544unm5" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick6_Half_R.gltf" id="95_vh4kc"]
+[ext_resource type="PackedScene" uid="uid://bmhayjjm0axdb" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick8.gltf" id="96_jo5uq"]
+[ext_resource type="PackedScene" uid="uid://cbcvvka602424" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick8_Half_L.gltf" id="97_obbgr"]
+[ext_resource type="PackedScene" uid="uid://3u38ri3ym5md" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Front_Brick8_Half_R.gltf" id="98_0h06y"]
+[ext_resource type="PackedScene" uid="uid://xurulqq5ckv8" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Log.gltf" id="99_cmrpd"]
+[ext_resource type="PackedScene" uid="uid://cubpn3y1oxea" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Modular_RoundTiles.gltf" id="100_b7ryi"]
+[ext_resource type="PackedScene" uid="uid://dgqlht3yw6anl" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_4x4.gltf" id="101_2q8r2"]
+[ext_resource type="PackedScene" uid="uid://dyjh12gac847j" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_4x6.gltf" id="102_8vstk"]
+[ext_resource type="PackedScene" uid="uid://473dmhp6n207" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_4x8.gltf" id="103_857nd"]
+[ext_resource type="PackedScene" uid="uid://ct6v3rin5qo81" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_6x4.gltf" id="104_t84mx"]
+[ext_resource type="PackedScene" uid="uid://hsurtx65xrk0" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_6x6.gltf" id="105_cnr2s"]
+[ext_resource type="PackedScene" uid="uid://c1oghdrhtpap7" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_6x8.gltf" id="106_y3h1q"]
+[ext_resource type="PackedScene" uid="uid://cjv2kx5manaya" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_6x10.gltf" id="107_bx4qo"]
+[ext_resource type="PackedScene" uid="uid://dowtgava06cl2" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_6x12.gltf" id="108_nrvpb"]
+[ext_resource type="PackedScene" uid="uid://c5hrif5avlj6o" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_6x14.gltf" id="109_khw5q"]
+[ext_resource type="PackedScene" uid="uid://ck0uxdvwhx0j4" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_8x8.gltf" id="110_g4yo0"]
+[ext_resource type="PackedScene" uid="uid://b562jq8bxatch" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_8x10.gltf" id="111_x5bp7"]
+[ext_resource type="PackedScene" uid="uid://cqls4yi76p7gb" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_8x12.gltf" id="112_84cro"]
+[ext_resource type="PackedScene" uid="uid://p47xmhjir3f6" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTiles_8x14.gltf" id="113_c8v8q"]
+[ext_resource type="PackedScene" uid="uid://denf2bfpln0p" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTile_2x1.gltf" id="114_gcf7q"]
+[ext_resource type="PackedScene" uid="uid://ci4lgfe14npqv" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_RoundTile_2x1_Long.gltf" id="115_lo0sv"]
+[ext_resource type="PackedScene" uid="uid://dsesepnm7gl5r" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Support2.gltf" id="116_75a8b"]
+[ext_resource type="PackedScene" uid="uid://doth2w57koso0" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Tower_RoundTiles.gltf" id="117_myjn1"]
+[ext_resource type="PackedScene" uid="uid://bwdn767h7ujnq" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Wooden_2x1.gltf" id="118_8ltr4"]
+[ext_resource type="PackedScene" uid="uid://qpnd1f55shtv" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Wooden_2x1_Center.gltf" id="119_8rcay"]
+[ext_resource type="PackedScene" uid="uid://otdr8k1o6gd3" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Wooden_2x1_Center_Mirror.gltf" id="120_f6km8"]
+[ext_resource type="PackedScene" uid="uid://b1lrnusd1tu2y" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Wooden_2x1_Corner.gltf" id="121_o3hxg"]
+[ext_resource type="PackedScene" uid="uid://dwar2na2aowst" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Wooden_2x1_L.gltf" id="122_uvyc1"]
+[ext_resource type="PackedScene" uid="uid://or6wu3j3imwt" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Wooden_2x1_Middle.gltf" id="123_0ukiy"]
+[ext_resource type="PackedScene" uid="uid://c7bu3h83o6fql" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Roof_Wooden_2x1_R.gltf" id="124_rci7u"]
+[ext_resource type="PackedScene" uid="uid://bpyj1vvvm1lf8" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_NoFirstStep.gltf" id="125_uscnq"]
+[ext_resource type="PackedScene" uid="uid://by7f4dgeoeh7b" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_Platform45.gltf" id="126_unfwy"]
+[ext_resource type="PackedScene" uid="uid://cn0htk1b2akrs" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_Platform45Clean.gltf" id="127_c3l3j"]
+[ext_resource type="PackedScene" uid="uid://c3tyfowa7ui2f" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_Platform.gltf" id="128_tsj2x"]
+[ext_resource type="PackedScene" uid="uid://cjx5nk03kf0oi" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_PlatformU.gltf" id="129_6h4ko"]
+[ext_resource type="PackedScene" uid="uid://j5ec6dqxj2f0" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_SidePlatform.gltf" id="130_s23a0"]
+[ext_resource type="PackedScene" uid="uid://01pob8hmcm7e" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_Sides45.gltf" id="131_ihwah"]
+[ext_resource type="PackedScene" uid="uid://cmmhlbotbhymh" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_Sides.gltf" id="132_xg7ym"]
+[ext_resource type="PackedScene" uid="uid://tygkebsa8rqh" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_SidesU.gltf" id="133_rehhw"]
+[ext_resource type="PackedScene" uid="uid://dld0cgy8a0thr" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_SingleSide.gltf" id="134_5qk8i"]
+[ext_resource type="PackedScene" uid="uid://c07r2t4k77bje" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_SingleSideThick.gltf" id="135_jvf2d"]
+[ext_resource type="PackedScene" uid="uid://biafi2q4u5ebu" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_Straight.gltf" id="136_vivm3"]
+[ext_resource type="PackedScene" uid="uid://dbdmm1fhdh7ff" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_Straight_Center.gltf" id="137_tm7xf"]
+[ext_resource type="PackedScene" uid="uid://dhausv0sv6gxl" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_Straight_L.gltf" id="138_rcwed"]
+[ext_resource type="PackedScene" uid="uid://c0d5lpgcwtr6v" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stairs_Exterior_Straight_R.gltf" id="139_mn5gm"]
+[ext_resource type="PackedScene" uid="uid://df00anntg5r0h" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stair_Interior_Rails.gltf" id="140_7b6og"]
+[ext_resource type="PackedScene" uid="uid://2hpcd8tays3j" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stair_Interior_Simple.gltf" id="141_yhl61"]
+[ext_resource type="PackedScene" uid="uid://di557n0a3hawk" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stair_Interior_Solid.gltf" id="142_786gp"]
+[ext_resource type="PackedScene" uid="uid://o1yawv0oijgf" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Stair_Interior_SolidExtended.gltf" id="143_hehas"]
+[ext_resource type="PackedScene" uid="uid://dneukxt3wvcu" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Arch.gltf" id="144_5rfge"]
+[ext_resource type="PackedScene" uid="uid://cliqgwdke3p54" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_BottomCover.gltf" id="145_dalts"]
+[ext_resource type="PackedScene" uid="uid://cooko8eklw73n" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Door_Flat.gltf" id="146_cah6o"]
+[ext_resource type="PackedScene" uid="uid://d2qmdseijtkpn" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Door_Round.gltf" id="147_6t4xf"]
+[ext_resource type="PackedScene" uid="uid://crwvw35v67qnp" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Door_RoundInset.gltf" id="148_m3qbw"]
+[ext_resource type="PackedScene" uid="uid://cyukyk588m43g" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Straight.gltf" id="149_8k0m6"]
+[ext_resource type="PackedScene" uid="uid://dli3p5s3ruiq2" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Straight_Base.gltf" id="150_nuy4m"]
+[ext_resource type="PackedScene" uid="uid://d363jymvsxff6" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Straight_L.gltf" id="151_k2nh1"]
+[ext_resource type="PackedScene" uid="uid://beftm6krb6xos" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Straight_R.gltf" id="152_khwhx"]
+[ext_resource type="PackedScene" uid="uid://dymhp03neb1e" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Window_Thin_Round.gltf" id="153_aqfv3"]
+[ext_resource type="PackedScene" uid="uid://cuh70hskyc4gn" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Window_Wide_Flat2.gltf" id="154_ro8tc"]
+[ext_resource type="PackedScene" uid="uid://bgxhxcriolk2d" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Window_Wide_Flat.gltf" id="155_r3jyo"]
+[ext_resource type="PackedScene" uid="uid://cqr33bm0pl5ip" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Window_Wide_Round.gltf" id="156_w0fxh"]
+[ext_resource type="PackedScene" uid="uid://kmc0cdaslf87" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_WoodGrid.gltf" id="157_onp2t"]
+[ext_resource type="PackedScene" uid="uid://buidgjnvn3pak" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_UnevenBrick_Door_Flat.gltf" id="158_ljo0h"]
+[ext_resource type="PackedScene" uid="uid://3i05i22ahpnt" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_UnevenBrick_Door_Round.gltf" id="159_rk4ea"]
+[ext_resource type="PackedScene" uid="uid://b18d06clqs2l8" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_UnevenBrick_Straight.gltf" id="160_x1vnj"]
+[ext_resource type="PackedScene" uid="uid://dic85khia1n61" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_UnevenBrick_Window_Thin_Round.gltf" id="161_hlhh2"]
+[ext_resource type="PackedScene" uid="uid://b80rsicx8f4vl" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_UnevenBrick_Window_Wide_Flat.gltf" id="162_1p608"]
+[ext_resource type="PackedScene" uid="uid://ceyl5ub7eh22x" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Wall_UnevenBrick_Window_Wide_Round.gltf" id="163_hlv8m"]
+[ext_resource type="PackedScene" uid="uid://d125dojxbuff3" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/WindowShutters_Thin_Flat_Closed.gltf" id="164_wy2nq"]
+[ext_resource type="PackedScene" uid="uid://c0g74v27lng4s" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/WindowShutters_Thin_Flat_Open.gltf" id="165_t1pir"]
+[ext_resource type="PackedScene" uid="uid://ceng7fcp6y2dc" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/WindowShutters_Thin_Round_Closed.gltf" id="166_ln0u3"]
+[ext_resource type="PackedScene" uid="uid://cnmw8w2rgprbt" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/WindowShutters_Thin_Round_Open.gltf" id="167_28jnm"]
+[ext_resource type="PackedScene" uid="uid://bt8clpbkwf372" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/WindowShutters_Wide_Flat_Closed.gltf" id="168_fee88"]
+[ext_resource type="PackedScene" uid="uid://5qluwqynah7o" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/WindowShutters_Wide_Flat_Open.gltf" id="169_6bw8e"]
+[ext_resource type="PackedScene" uid="uid://bco7sjrmqgkqi" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/WindowShutters_Wide_Round_Closed.gltf" id="170_r7g6g"]
+[ext_resource type="PackedScene" uid="uid://db6ar121kkg0c" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/WindowShutters_Wide_Round_Open.gltf" id="171_ii8wl"]
+[ext_resource type="PackedScene" uid="uid://bmp6sy7rgl0g2" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Window_Roof_Thin.gltf" id="172_efjft"]
+[ext_resource type="PackedScene" uid="uid://do607jbfjvoyt" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Window_Roof_Wide.gltf" id="173_krnva"]
+[ext_resource type="PackedScene" uid="uid://dsgcvugqbheow" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Window_Thin_Flat1.gltf" id="174_icjga"]
+[ext_resource type="PackedScene" uid="uid://0rt0virgl2ic" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Window_Thin_Round1.gltf" id="175_mbn4h"]
+[ext_resource type="PackedScene" uid="uid://ie3unxg0gpv8" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Window_Wide_Flat1.gltf" id="176_u1fpa"]
+[ext_resource type="PackedScene" uid="uid://dix8xfysjeor1" path="res://Assets/Medieval Village MegaKit[Standard]/Medieval Village MegaKit[Standard]/glTF/Window_Wide_Round1.gltf" id="177_704ef"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_4281l")
+
+[node name="Balcony_Cross_Corner2" parent="." instance=ExtResource("2_tsolc")]
+
+[node name="Balcony_Cross_Straight2" parent="." instance=ExtResource("3_1yw5d")]
+
+[node name="Balcony_Simple_Corner2" parent="." instance=ExtResource("4_al6pm")]
+
+[node name="Balcony_Simple_Straight2" parent="." instance=ExtResource("5_nrixm")]
+
+[node name="Corner_ExteriorWide_Brick2" parent="." instance=ExtResource("6_23hgp")]
+
+[node name="Corner_ExteriorWide_Wood2" parent="." instance=ExtResource("7_w2ok4")]
+
+[node name="Corner_Exterior_Brick2" parent="." instance=ExtResource("8_ndwtm")]
+
+[node name="Corner_Exterior_TopDown2" parent="." instance=ExtResource("9_0fv51")]
+
+[node name="Corner_Exterior_TopOnly2" parent="." instance=ExtResource("10_sqrtf")]
+
+[node name="Corner_Exterior_Wood2" parent="." instance=ExtResource("11_pbcvc")]
+
+[node name="Corner_Interior_Big2" parent="." instance=ExtResource("12_yj57s")]
+
+[node name="Corner_Interior_Small2" parent="." instance=ExtResource("13_ax4dq")]
+
+[node name="DoorFrame_Flat_Brick2" parent="." instance=ExtResource("14_n35o4")]
+
+[node name="DoorFrame_Flat_WoodDark2" parent="." instance=ExtResource("15_dgw7h")]
+
+[node name="DoorFrame_Round_Brick2" parent="." instance=ExtResource("16_3brfm")]
+
+[node name="DoorFrame_Round_WoodDark2" parent="." instance=ExtResource("17_vpjlu")]
+
+[node name="Door_1_Flat2" parent="." instance=ExtResource("18_fg3tg")]
+
+[node name="Door_1_Round2" parent="." instance=ExtResource("19_pwbpy")]
+
+[node name="Door_2_Flat2" parent="." instance=ExtResource("20_wmgww")]
+
+[node name="Door_2_Round2" parent="." instance=ExtResource("21_nqx3s")]
+
+[node name="Door_4_Flat2" parent="." instance=ExtResource("22_udbes")]
+
+[node name="Door_4_Round2" parent="." instance=ExtResource("23_elp6o")]
+
+[node name="Door_8_Flat2" parent="." instance=ExtResource("24_obsi5")]
+
+[node name="Door_8_Round2" parent="." instance=ExtResource("25_xkjk6")]
+
+[node name="Floor_Brick2" parent="." instance=ExtResource("26_s6ujq")]
+
+[node name="Floor_RedBrick2" parent="." instance=ExtResource("27_7sk8p")]
+
+[node name="Floor_UnevenBrick2" parent="." instance=ExtResource("28_evsvr")]
+
+[node name="Floor_WoodDark2" parent="." instance=ExtResource("29_yunki")]
+
+[node name="Floor_WoodDark_Half12" parent="." instance=ExtResource("30_tcouk")]
+
+[node name="Floor_WoodDark_Half22" parent="." instance=ExtResource("31_gkyjr")]
+
+[node name="Floor_WoodDark_Half32" parent="." instance=ExtResource("32_tji6n")]
+
+[node name="Floor_WoodDark_OverhangCorner22" parent="." instance=ExtResource("33_lljkc")]
+
+[node name="Floor_WoodDark_OverhangCorner2" parent="." instance=ExtResource("34_xn31k")]
+
+[node name="Floor_WoodLight2" parent="." instance=ExtResource("35_t5ex1")]
+
+[node name="Floor_WoodLight_OverhangCorner22" parent="." instance=ExtResource("36_ao8u8")]
+
+[node name="Floor_WoodLight_OverhangCorner2" parent="." instance=ExtResource("37_iykry")]
+
+[node name="HoleCover_90Angle2" parent="." instance=ExtResource("38_kfkxd")]
+
+[node name="HoleCover_90Half2" parent="." instance=ExtResource("39_pua5y")]
+
+[node name="HoleCover_90Stairs2" parent="." instance=ExtResource("40_li5c7")]
+
+[node name="HoleCover_Straight2" parent="." instance=ExtResource("41_tb0me")]
+
+[node name="HoleCover_StraightHalf2" parent="." instance=ExtResource("42_y5sq1")]
+
+[node name="Overhang_Plaster_Corner2" parent="." instance=ExtResource("43_0olgu")]
+
+[node name="Overhang_Plaster_Corner_Front2" parent="." instance=ExtResource("44_0wvrw")]
+
+[node name="Overhang_Plaster_Long2" parent="." instance=ExtResource("45_j47pa")]
+
+[node name="Overhang_Plaster_Short2" parent="." instance=ExtResource("46_4lslq")]
+
+[node name="Overhang_RoofIncline_Plaster2" parent="." instance=ExtResource("47_y8ely")]
+
+[node name="Overhang_RoofIncline_UnevenBricks2" parent="." instance=ExtResource("48_bhty5")]
+
+[node name="Overhang_Roof_Plaster2" parent="." instance=ExtResource("49_hqowu")]
+
+[node name="Overhang_Roof_UnevenBricks2" parent="." instance=ExtResource("50_5wm2v")]
+
+[node name="Overhang_Side_Plaster_Long_L2" parent="." instance=ExtResource("51_a6fxw")]
+
+[node name="Overhang_Side_Plaster_Long_R2" parent="." instance=ExtResource("52_pxv0b")]
+
+[node name="Overhang_Side_Plaster_Short_L2" parent="." instance=ExtResource("53_wrjeg")]
+
+[node name="Overhang_Side_Plaster_Short_R2" parent="." instance=ExtResource("54_ajjwy")]
+
+[node name="Overhang_Side_UnevenBrick_Long_L2" parent="." instance=ExtResource("55_6semv")]
+
+[node name="Overhang_Side_UnevenBrick_Long_R2" parent="." instance=ExtResource("56_8tvqw")]
+
+[node name="Overhang_Side_UnevenBrick_Short_L2" parent="." instance=ExtResource("57_h63po")]
+
+[node name="Overhang_Side_UnevenBrick_Short_R2" parent="." instance=ExtResource("58_6noex")]
+
+[node name="Overhang_UnevenBrick_Corner2" parent="." instance=ExtResource("59_wx1jo")]
+
+[node name="Overhang_UnevenBrick_Corner_Front2" parent="." instance=ExtResource("60_w7ko5")]
+
+[node name="Overhang_UnevenBrick_Long2" parent="." instance=ExtResource("61_cu51j")]
+
+[node name="Overhang_UnevenBrick_Short2" parent="." instance=ExtResource("62_ueg04")]
+
+[node name="Prop_Brick12" parent="." instance=ExtResource("63_rp3ce")]
+
+[node name="Prop_Brick22" parent="." instance=ExtResource("64_qwo0g")]
+
+[node name="Prop_Brick32" parent="." instance=ExtResource("65_caq87")]
+
+[node name="Prop_Brick42" parent="." instance=ExtResource("66_86i5c")]
+
+[node name="Prop_Chimney22" parent="." instance=ExtResource("67_c1hq6")]
+
+[node name="Prop_Chimney2" parent="." instance=ExtResource("68_202a6")]
+
+[node name="Prop_Crate2" parent="." instance=ExtResource("69_mns1d")]
+
+[node name="Prop_ExteriorBorder_Corner2" parent="." instance=ExtResource("70_0ndml")]
+
+[node name="Prop_ExteriorBorder_Straight12" parent="." instance=ExtResource("71_57258")]
+
+[node name="Prop_ExteriorBorder_Straight22" parent="." instance=ExtResource("72_vw0kf")]
+
+[node name="Prop_MetalFence_Ornament2" parent="." instance=ExtResource("73_diwd2")]
+
+[node name="Prop_MetalFence_Simple2" parent="." instance=ExtResource("74_e1wug")]
+
+[node name="Prop_Support2" parent="." instance=ExtResource("75_85kys")]
+
+[node name="Prop_Vine12" parent="." instance=ExtResource("76_4wsk3")]
+
+[node name="Prop_Vine22" parent="." instance=ExtResource("77_0r3rl")]
+
+[node name="Prop_Vine42" parent="." instance=ExtResource("78_fx0q1")]
+
+[node name="Prop_Vine52" parent="." instance=ExtResource("79_1e7wh")]
+
+[node name="Prop_Vine62" parent="." instance=ExtResource("80_cybmu")]
+
+[node name="Prop_Vine92" parent="." instance=ExtResource("81_1ko24")]
+
+[node name="Prop_Wagon2" parent="." instance=ExtResource("82_socal")]
+
+[node name="Prop_WoodenFence_Extension12" parent="." instance=ExtResource("83_munu0")]
+
+[node name="Prop_WoodenFence_Extension22" parent="." instance=ExtResource("84_3waip")]
+
+[node name="Prop_WoodenFence_Single2" parent="." instance=ExtResource("85_cg0pd")]
+
+[node name="Roof_2x4_RoundTile2" parent="." instance=ExtResource("86_lh7uj")]
+
+[node name="Roof_Dormer_RoundTile2" parent="." instance=ExtResource("87_nquds")]
+
+[node name="Roof_FrontSupports2" parent="." instance=ExtResource("88_8a7vd")]
+
+[node name="Roof_Front_Brick22" parent="." instance=ExtResource("89_puyu3")]
+
+[node name="Roof_Front_Brick42" parent="." instance=ExtResource("90_6ow0x")]
+
+[node name="Roof_Front_Brick4_Half_L2" parent="." instance=ExtResource("91_y8wla")]
+
+[node name="Roof_Front_Brick4_Half_R2" parent="." instance=ExtResource("92_jlh2y")]
+
+[node name="Roof_Front_Brick62" parent="." instance=ExtResource("93_4me5o")]
+
+[node name="Roof_Front_Brick6_Half_L2" parent="." instance=ExtResource("94_4d36y")]
+
+[node name="Roof_Front_Brick6_Half_R2" parent="." instance=ExtResource("95_vh4kc")]
+
+[node name="Roof_Front_Brick82" parent="." instance=ExtResource("96_jo5uq")]
+
+[node name="Roof_Front_Brick8_Half_L2" parent="." instance=ExtResource("97_obbgr")]
+
+[node name="Roof_Front_Brick8_Half_R2" parent="." instance=ExtResource("98_0h06y")]
+
+[node name="Roof_Log2" parent="." instance=ExtResource("99_cmrpd")]
+
+[node name="Roof_Modular_RoundTiles2" parent="." instance=ExtResource("100_b7ryi")]
+
+[node name="Roof_RoundTiles_4x42" parent="." instance=ExtResource("101_2q8r2")]
+
+[node name="Roof_RoundTiles_4x62" parent="." instance=ExtResource("102_8vstk")]
+
+[node name="Roof_RoundTiles_4x82" parent="." instance=ExtResource("103_857nd")]
+
+[node name="Roof_RoundTiles_6x42" parent="." instance=ExtResource("104_t84mx")]
+
+[node name="Roof_RoundTiles_6x62" parent="." instance=ExtResource("105_cnr2s")]
+
+[node name="Roof_RoundTiles_6x82" parent="." instance=ExtResource("106_y3h1q")]
+
+[node name="Roof_RoundTiles_6x102" parent="." instance=ExtResource("107_bx4qo")]
+
+[node name="Roof_RoundTiles_6x122" parent="." instance=ExtResource("108_nrvpb")]
+
+[node name="Roof_RoundTiles_6x142" parent="." instance=ExtResource("109_khw5q")]
+
+[node name="Roof_RoundTiles_8x82" parent="." instance=ExtResource("110_g4yo0")]
+
+[node name="Roof_RoundTiles_8x102" parent="." instance=ExtResource("111_x5bp7")]
+
+[node name="Roof_RoundTiles_8x122" parent="." instance=ExtResource("112_84cro")]
+
+[node name="Roof_RoundTiles_8x142" parent="." instance=ExtResource("113_c8v8q")]
+
+[node name="Roof_RoundTile_2x12" parent="." instance=ExtResource("114_gcf7q")]
+
+[node name="Roof_RoundTile_2x1_Long2" parent="." instance=ExtResource("115_lo0sv")]
+
+[node name="Roof_Support22" parent="." instance=ExtResource("116_75a8b")]
+
+[node name="Roof_Tower_RoundTiles2" parent="." instance=ExtResource("117_myjn1")]
+
+[node name="Roof_Wooden_2x12" parent="." instance=ExtResource("118_8ltr4")]
+
+[node name="Roof_Wooden_2x1_Center2" parent="." instance=ExtResource("119_8rcay")]
+
+[node name="Roof_Wooden_2x1_Center_Mirror2" parent="." instance=ExtResource("120_f6km8")]
+
+[node name="Roof_Wooden_2x1_Corner2" parent="." instance=ExtResource("121_o3hxg")]
+
+[node name="Roof_Wooden_2x1_L2" parent="." instance=ExtResource("122_uvyc1")]
+
+[node name="Roof_Wooden_2x1_Middle2" parent="." instance=ExtResource("123_0ukiy")]
+
+[node name="Roof_Wooden_2x1_R2" parent="." instance=ExtResource("124_rci7u")]
+
+[node name="Stairs_Exterior_NoFirstStep2" parent="." instance=ExtResource("125_uscnq")]
+
+[node name="Stairs_Exterior_Platform452" parent="." instance=ExtResource("126_unfwy")]
+
+[node name="Stairs_Exterior_Platform453" parent="." instance=ExtResource("126_unfwy")]
+
+[node name="Stairs_Exterior_Platform45Clean2" parent="." instance=ExtResource("127_c3l3j")]
+
+[node name="Stairs_Exterior_Platform2" parent="." instance=ExtResource("128_tsj2x")]
+
+[node name="Stairs_Exterior_PlatformU2" parent="." instance=ExtResource("129_6h4ko")]
+
+[node name="Stairs_Exterior_SidePlatform2" parent="." instance=ExtResource("130_s23a0")]
+
+[node name="Stairs_Exterior_Sides452" parent="." instance=ExtResource("131_ihwah")]
+
+[node name="Stairs_Exterior_Sides2" parent="." instance=ExtResource("132_xg7ym")]
+
+[node name="Stairs_Exterior_SidesU2" parent="." instance=ExtResource("133_rehhw")]
+
+[node name="Stairs_Exterior_SingleSide2" parent="." instance=ExtResource("134_5qk8i")]
+
+[node name="Stairs_Exterior_SingleSideThick2" parent="." instance=ExtResource("135_jvf2d")]
+
+[node name="Stairs_Exterior_Straight2" parent="." instance=ExtResource("136_vivm3")]
+
+[node name="Stairs_Exterior_Straight_Center2" parent="." instance=ExtResource("137_tm7xf")]
+
+[node name="Stairs_Exterior_Straight_L2" parent="." instance=ExtResource("138_rcwed")]
+
+[node name="Stairs_Exterior_Straight_R2" parent="." instance=ExtResource("139_mn5gm")]
+
+[node name="Stair_Interior_Rails2" parent="." instance=ExtResource("140_7b6og")]
+
+[node name="Stair_Interior_Simple2" parent="." instance=ExtResource("141_yhl61")]
+
+[node name="Stair_Interior_Solid2" parent="." instance=ExtResource("142_786gp")]
+
+[node name="Stair_Interior_SolidExtended2" parent="." instance=ExtResource("143_hehas")]
+
+[node name="Wall_Arch2" parent="." instance=ExtResource("144_5rfge")]
+
+[node name="Wall_BottomCover2" parent="." instance=ExtResource("145_dalts")]
+
+[node name="Wall_BottomCover3" parent="." instance=ExtResource("145_dalts")]
+
+[node name="Wall_Plaster_Door_Flat2" parent="." instance=ExtResource("146_cah6o")]
+
+[node name="Wall_Plaster_Door_Round2" parent="." instance=ExtResource("147_6t4xf")]
+
+[node name="Wall_Plaster_Door_RoundInset2" parent="." instance=ExtResource("148_m3qbw")]
+
+[node name="Wall_Plaster_Straight2" parent="." instance=ExtResource("149_8k0m6")]
+
+[node name="Wall_Plaster_Straight_Base2" parent="." instance=ExtResource("150_nuy4m")]
+
+[node name="Wall_Plaster_Straight_L2" parent="." instance=ExtResource("151_k2nh1")]
+
+[node name="Wall_Plaster_Straight_R2" parent="." instance=ExtResource("152_khwhx")]
+
+[node name="Wall_Plaster_Window_Thin_Round2" parent="." instance=ExtResource("153_aqfv3")]
+
+[node name="Wall_Plaster_Window_Wide_Flat22" parent="." instance=ExtResource("154_ro8tc")]
+
+[node name="Wall_Plaster_Window_Wide_Flat2" parent="." instance=ExtResource("155_r3jyo")]
+
+[node name="Wall_Plaster_Window_Wide_Round2" parent="." instance=ExtResource("156_w0fxh")]
+
+[node name="Wall_Plaster_WoodGrid2" parent="." instance=ExtResource("157_onp2t")]
+
+[node name="Wall_UnevenBrick_Door_Flat2" parent="." instance=ExtResource("158_ljo0h")]
+
+[node name="Wall_UnevenBrick_Door_Round2" parent="." instance=ExtResource("159_rk4ea")]
+
+[node name="Wall_UnevenBrick_Straight2" parent="." instance=ExtResource("160_x1vnj")]
+
+[node name="Wall_UnevenBrick_Window_Thin_Round2" parent="." instance=ExtResource("161_hlhh2")]
+
+[node name="Wall_UnevenBrick_Window_Wide_Flat2" parent="." instance=ExtResource("162_1p608")]
+
+[node name="Wall_UnevenBrick_Window_Wide_Round2" parent="." instance=ExtResource("163_hlv8m")]
+
+[node name="WindowShutters_Thin_Flat_Closed2" parent="." instance=ExtResource("164_wy2nq")]
+
+[node name="WindowShutters_Thin_Flat_Open2" parent="." instance=ExtResource("165_t1pir")]
+
+[node name="WindowShutters_Thin_Round_Closed2" parent="." instance=ExtResource("166_ln0u3")]
+
+[node name="WindowShutters_Thin_Round_Open2" parent="." instance=ExtResource("167_28jnm")]
+
+[node name="WindowShutters_Wide_Flat_Closed2" parent="." instance=ExtResource("168_fee88")]
+
+[node name="WindowShutters_Wide_Flat_Open2" parent="." instance=ExtResource("169_6bw8e")]
+
+[node name="WindowShutters_Wide_Round_Closed2" parent="." instance=ExtResource("170_r7g6g")]
+
+[node name="WindowShutters_Wide_Round_Open2" parent="." instance=ExtResource("171_ii8wl")]
+
+[node name="Window_Roof_Thin2" parent="." instance=ExtResource("172_efjft")]
+
+[node name="Window_Roof_Wide2" parent="." instance=ExtResource("173_krnva")]
+
+[node name="Window_Thin_Flat12" parent="." instance=ExtResource("174_icjga")]
+
+[node name="Window_Thin_Round12" parent="." instance=ExtResource("175_mbn4h")]
+
+[node name="Window_Wide_Flat12" parent="." instance=ExtResource("176_u1fpa")]
+
+[node name="Window_Wide_Round12" parent="." instance=ExtResource("177_704ef")]
