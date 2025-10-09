@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcupqc0gp2y3p"]
+
+[ext_resource type="Texture2D" uid="uid://dfq5i58i4mlav" path="res://Assets/hay_bales_4k.hdr" id="1_h08wb"]
+[ext_resource type="MeshLibrary" uid="uid://ccfrk2oicku20" path="res://map2.tres" id="2_vq02i"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_fd646"]
+panorama = ExtResource("1_h08wb")
+
+[sub_resource type="Sky" id="Sky_benah"]
+sky_material = SubResource("PanoramaSkyMaterial_fd646")
+
+[sub_resource type="Environment" id="Environment_h420i"]
+background_mode = 2
+background_energy_multiplier = 1.65
+sky = SubResource("Sky_benah")
+sky_custom_fov = 10.5
+ambient_light_source = 3
+ambient_light_color = Color(0.501961, 0.74902, 1, 1)
+ambient_light_energy = 1.81
+reflected_light_source = 2
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_h420i")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, -0.353553, 0.353553, 0, 0.707107, 0.707107, -0.5, -0.612372, 0.612372, 441.99, 378.077, -452.552)
+light_energy = 2.0
+shadow_enabled = true
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, -0.353553, 0.353553, 0, 0.707107, 0.707107, -0.5, -0.612372, 0.612372, 441.99, 378.077, -452.552)
+light_energy = 2.0
+shadow_enabled = true
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("2_vq02i")
