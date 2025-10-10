@@ -20,10 +20,11 @@ func handle_input():
 
 	elif Input.is_action_pressed("Up"):
 		$AnimatedSprite2D.play("jump")
+		velocity.y=-speed
 		
 	elif Input.is_action_pressed("Down"):
 		$AnimatedSprite2D.play("crouch")
-
+		velocity.y =speed
 	else:
 		$AnimatedSprite2D.play("idle")
 
