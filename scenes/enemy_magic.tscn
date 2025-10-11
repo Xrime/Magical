@@ -1,3 +1,56 @@
-[gd_scene format=3 uid="uid://csnw1b056gkik"]
+[gd_scene load_steps=9 format=3 uid="uid://csnw1b056gkik"]
 
-[node name="enemy_magic" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://d0iap0whd5uhn" path="res://Assets/Evil Wizard 3/Evil Wizard 3/Sprites/Projectile/Moving.png" id="1_o26sc"]
+[ext_resource type="Script" uid="uid://e3c3k7r4uiey" path="res://scenes/enemy_magic.gd" id="1_wvmly"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wvmly"]
+radius = 7.0
+height = 24.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wg74i"]
+atlas = ExtResource("1_o26sc")
+region = Rect2(0, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tts2n"]
+atlas = ExtResource("1_o26sc")
+region = Rect2(50, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l2d1j"]
+atlas = ExtResource("1_o26sc")
+region = Rect2(100, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8vg01"]
+atlas = ExtResource("1_o26sc")
+region = Rect2(150, 0, 50, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4ho0k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wg74i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tts2n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l2d1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8vg01")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="enemy_magic" type="Area2D"]
+script = ExtResource("1_wvmly")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_wvmly")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4, -1)
+sprite_frames = SubResource("SpriteFrames_4ho0k")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

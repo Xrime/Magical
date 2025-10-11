@@ -1,17 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://b1003tpl1oii6"]
 
-[ext_resource type="PackedScene" uid="uid://uwed6yni514p" path="res://scenes/main.tscn" id="1_4wyf3"]
+[ext_resource type="Script" uid="uid://bwal4r4dm3th4" path="res://scenes/world.gd" id="1_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://c4l2vv5e3q40q" path="res://scenes/enemy.tscn" id="1_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://bexgv2l4qv86n" path="res://scenes/player.tscn" id="2_4wyf3"]
 
 [node name="world" type="Node2D"]
-
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="Main" parent="Node2D" instance=ExtResource("1_4wyf3")]
-position = Vector2(-17, -4)
+script = ExtResource("1_4wyf3")
 
 [node name="Enemy" parent="." instance=ExtResource("1_rwgxs")]
 
 [node name="Player" parent="." instance=ExtResource("2_4wyf3")]
-position = Vector2(-88, 468)
+z_index = 1
+position = Vector2(-32, 181)
+magic_scene = null
