@@ -11,8 +11,8 @@ func _physics_process(delta):
 		queue_free()
 
 func _on_body_entered(body):
-	# When magic hits the player
-	if body.is_in_group("player"):  # ✅ check player group
+	
+	if body.is_in_group("player"):  
 		if body.has_method("die"):
 			body.die()  # Call the player's death function
 		queue_free()  # remove the magic
