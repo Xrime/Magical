@@ -58,7 +58,7 @@ func shoot_magic():
 	magic.global_position = shoot_point
 
 	var direction = Vector2(1, 0) if not $AnimatedSprite2D.flip_h else Vector2(-1, 0)
-	magic.direction = direction   # ✅ will work once we define it in magic.gd
+	magic.direction = direction  
 
 	get_parent().add_child(magic)
 	$AnimatedSprite2D.play("attack")
@@ -70,7 +70,7 @@ func die():
 	$AnimatedSprite2D.play("death")
 	set_physics_process(false)
 
-	await get_tree().create_timer(1.5).timeout  # wait for death animation
+	await get_tree().create_timer(1.5).timeout 
 
 	respawn()
 	
@@ -80,6 +80,6 @@ func respawn():
 	velocity = Vector2.ZERO
 
 	# Set your desired respawn position here
-	global_position = Vector2(100, 300)  # example spawn point
+	global_position = Vector2(100, 300)
 
 	$AnimatedSprite2D.play("idle")
