@@ -1,6 +1,7 @@
 [gd_scene load_steps=16 format=4 uid="uid://c6j1cypchf6m6"]
 
 [ext_resource type="Texture2D" uid="uid://oe2qytwnskog" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_1.png" id="1_36yyr"]
+[ext_resource type="Script" uid="uid://du2bkx3rhxdsf" path="res://scenes/chuck_1.gd" id="1_lep33"]
 [ext_resource type="PackedScene" uid="uid://ctxvxdcjdcpgc" path="res://scenes/enemy_spanner.tscn" id="2_a384s"]
 [ext_resource type="Texture2D" uid="uid://bq3int54p8pdi" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_2.png" id="2_xebq6"]
 [ext_resource type="PackedScene" uid="uid://bexgv2l4qv86n" path="res://scenes/player.tscn" id="3_0ihha"]
@@ -1163,9 +1164,6 @@ sources/0 = SubResource("TileSetAtlasSource_5aul8")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52oe1"]
 size = Vector2(28, 692)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5aul8"]
-size = Vector2(1188, 20)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jo155"]
 size = Vector2(52.5, 663.5)
 
@@ -1173,6 +1171,7 @@ size = Vector2(52.5, 663.5)
 size = Vector2(1183, 35)
 
 [node name="chuck_1" type="Area2D"]
+script = ExtResource("1_lep33")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 
@@ -1193,23 +1192,21 @@ tile_map_data = PackedByteArray("AAAAAB4AAAASAAkAAAAAAB8AAAASAAoAAAABAB4AAAATAAk
 tile_set = SubResource("TileSet_jo155")
 collision_visibility_mode = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-13, 329)
-shape = SubResource("RectangleShape2D_52oe1")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
-position = Vector2(584, 0)
-shape = SubResource("RectangleShape2D_5aul8")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(1180.75, 329.25)
-shape = SubResource("RectangleShape2D_jo155")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(594.5, 666.5)
-shape = SubResource("RectangleShape2D_a384s")
-
 [node name="Enemy_spanner" parent="." instance=ExtResource("2_a384s")]
 
 [node name="Player" parent="." instance=ExtResource("3_0ihha")]
 position = Vector2(-3, 156)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-18, 345)
+shape = SubResource("RectangleShape2D_52oe1")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1180.75, 329.25)
+shape = SubResource("RectangleShape2D_jo155")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(594.5, 666.5)
+shape = SubResource("RectangleShape2D_a384s")

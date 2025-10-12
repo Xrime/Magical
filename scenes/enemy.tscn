@@ -518,7 +518,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_md484"]
 
-[node name="Enemy" type="CharacterBody2D" groups=["Enemy", "Player", "enemy", "player"]]
+[node name="Enemy" type="CharacterBody2D" groups=["Enemy", "Player", "Player2", "enemy", "player"]]
 collision_layer = 2
 script = ExtResource("1_ipns3")
 magic_scene = ExtResource("10_8qclf")

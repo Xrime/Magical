@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://bf30o0ijjtfvy"]
+[gd_scene load_steps=18 format=4 uid="uid://bf30o0ijjtfvy"]
 
 [ext_resource type="Texture2D" uid="uid://oe2qytwnskog" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_1.png" id="1_3wvj2"]
 [ext_resource type="Texture2D" uid="uid://bq3int54p8pdi" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_2.png" id="2_ejvc0"]
@@ -1235,17 +1235,14 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_qkr4k")
 sources/1 = SubResource("TileSetAtlasSource_fm4sj")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_du0r0"]
-size = Vector2(1198.25, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3wvj2"]
+size = Vector2(28, 692)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fm4sj"]
-size = Vector2(42.5, 657.75)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ejvc0"]
+size = Vector2(52.5, 663.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qkr4k"]
-size = Vector2(1162.63, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_li3ut"]
-size = Vector2(50.5, 667)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4oml"]
+size = Vector2(1183, 35)
 
 [node name="chuck_2w" type="Area2D"]
 
@@ -1268,25 +1265,24 @@ tile_map_data = PackedByteArray("AAAAAAsAAAAAAAAAAAAAAAwAAAAAAAEAAAAAAA0AAQAAAAA
 tile_set = SubResource("TileSet_li3ut")
 collision_visibility_mode = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(598.875, 651)
-shape = SubResource("RectangleShape2D_du0r0")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(-20, 323)
-shape = SubResource("RectangleShape2D_fm4sj")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(586.688, -11)
-shape = SubResource("RectangleShape2D_qkr4k")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
-position = Vector2(1181, 330)
-shape = SubResource("RectangleShape2D_li3ut")
-
 [node name="Player2" parent="." instance=ExtResource("5_u8git")]
+position = Vector2(-15, 111)
 
 [node name="Enemy_spanner" parent="." instance=ExtResource("6_q2hib")]
 
 [node name="WaterArea" parent="." instance=ExtResource("7_kgavf")]
 position = Vector2(-9, 564)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-18, 345)
+shape = SubResource("RectangleShape2D_3wvj2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1180.75, 329.25)
+shape = SubResource("RectangleShape2D_ejvc0")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(594.5, 666.5)
+shape = SubResource("RectangleShape2D_a4oml")

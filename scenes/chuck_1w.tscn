@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dy43bm30oy34a"]
+[gd_scene load_steps=16 format=4 uid="uid://dy43bm30oy34a"]
 
 [ext_resource type="Script" uid="uid://du2bkx3rhxdsf" path="res://scenes/chuck_1.gd" id="1_4djei"]
 [ext_resource type="Texture2D" uid="uid://oe2qytwnskog" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_1.png" id="2_c4k8y"]
@@ -1161,16 +1161,13 @@ texture = ExtResource("4_gq0vd")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_5aul8")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_52oe1"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4djei"]
 size = Vector2(28, 692)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5aul8"]
-size = Vector2(1188, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jo155"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c4k8y"]
 size = Vector2(52.5, 663.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a384s"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nrbjl"]
 size = Vector2(1183, 35)
 
 [node name="chuck_1w" type="Area2D"]
@@ -1195,22 +1192,21 @@ tile_map_data = PackedByteArray("AAAAAB4AAAASAAkAAAAAAB8AAAASAAoAAAABAB4AAAATAAk
 tile_set = SubResource("TileSet_jo155")
 collision_visibility_mode = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-13, 329)
-shape = SubResource("RectangleShape2D_52oe1")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
-position = Vector2(584, 0)
-shape = SubResource("RectangleShape2D_5aul8")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(1180.75, 329.25)
-shape = SubResource("RectangleShape2D_jo155")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(594.5, 666.5)
-shape = SubResource("RectangleShape2D_a384s")
-
 [node name="Enemy_spanner" parent="." instance=ExtResource("5_e85ov")]
 
 [node name="Player2" parent="." instance=ExtResource("6_p4rs3")]
+position = Vector2(-2, 122)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-18, 345)
+shape = SubResource("RectangleShape2D_4djei")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1180.75, 329.25)
+shape = SubResource("RectangleShape2D_c4k8y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(594.5, 666.5)
+shape = SubResource("RectangleShape2D_nrbjl")

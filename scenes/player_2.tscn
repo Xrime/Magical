@@ -111,7 +111,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player2" type="CharacterBody2D" groups=["Player", "enemy", "player"]]
+[node name="Player2" type="CharacterBody2D" groups=["Player", "Player2", "enemy", "player"]]
 collision_mask = 3
 script = ExtResource("1_60kbs")
 magic_scene = ExtResource("2_ngtxa")

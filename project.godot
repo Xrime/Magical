@@ -27,6 +27,7 @@ Player=false
 
 enemy=""
 Player=""
+Player2=""
 
 [input]
 

@@ -62,6 +62,7 @@ offset_top = 443.0
 offset_right = 870.0
 offset_bottom = 483.0
 theme_override_font_sizes/font_size = 25
-text = "Water Blender"
+text = "Water Bender"
 
 [connection signal="pressed" from="Control/LinkButton" to="." method="_on_link_button_pressed"]
+[connection signal="pressed" from="Control/LinkButton2" to="." method="_on_link_button_2_pressed"]

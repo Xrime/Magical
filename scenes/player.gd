@@ -4,7 +4,7 @@ extends CharacterBody2D
 var speed = 300
 var is_attacking = false
 var is_dead = false
-var jump_force = -700
+var jump_force = -1000
 var gravity = 4000
 
 @onready var sprite = $AnimatedSprite2D

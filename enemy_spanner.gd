@@ -8,6 +8,7 @@ extends Node2D
 
 var timer: Timer
 var player_ref: CharacterBody2D  # ✅ stores actual player reference
+var player_ref1: CharacterBody2D
 
 func _ready():
 	if not enemy_scene:
@@ -16,7 +17,8 @@ func _ready():
 
 	# ✅ Find Player instance in scene
 	player_ref = get_tree().get_root().find_child("Player", true, false)
-	if not player_ref:
+	player_ref1 = get_tree().get_root().find_child("Player2", true, false)
+	if not (player_ref or player_ref1):
 		push_error("❌ Could not find Player node in the scene tree!")
 		return
 
@@ -36,8 +38,11 @@ func spawn_enemy():
 	var random_x = randf_range(spawn_min_x, spawn_max_x)
 	enemy.position = Vector2(random_x, spawn_height)
 	
-	# ✅ Give enemy the real player reference
-	enemy.player = player_ref
+	if player_ref:
+		enemy.player = player_ref
+	elif player_ref1:
+		enemy.player = player_ref1
+
 	
 	get_parent().add_child(enemy)
 	print("👾 Spawned enemy at:", enemy.position)
