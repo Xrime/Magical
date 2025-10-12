@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4dxuv465uepa"]
+
+[ext_resource type="Script" uid="uid://btyyl6rlx1g4u" path="res://scenes/dashboard.gd" id="1_bi3rc"]
+[ext_resource type="Texture2D" uid="uid://oe2qytwnskog" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_1.png" id="1_sss21"]
+
+[sub_resource type="Theme" id="Theme_bi3rc"]
+
+[node name="dashboard" type="Node2D" groups=["Player", "enemy"]]
+script = ExtResource("1_bi3rc")
+
+[node name="Layer1" type="Sprite2D" parent="."]
+position = Vector2(580, 323.5)
+scale = Vector2(3.60938, 3.62778)
+texture = ExtResource("1_sss21")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 2.0
+offset_right = 1153.0
+offset_bottom = 646.0
+metadata/_edit_lock_ = true
+
+[node name="TextEdit" type="TextEdit" parent="Control"]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 149.0
+offset_right = 830.0
+offset_bottom = 247.0
+theme = SubResource("Theme_bi3rc")
+theme_override_colors/font_color = Color(0.807843, 0.733333, 0.180392, 1)
+theme_override_colors/font_selected_color = Color(0.94902, 0.290196, 0.729412, 1)
+theme_override_font_sizes/font_size = 70
+text = "Magical world
+"
+
+[node name="TextEdit2" type="TextEdit" parent="Control"]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 319.0
+offset_right = 723.0
+offset_bottom = 368.0
+theme_override_font_sizes/font_size = 30
+text = "Pick Your Magician
+"
+
+[node name="LinkButton" type="LinkButton" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.031
+offset_left = 255.0
+offset_top = 437.0
+offset_right = 433.0
+offset_bottom = 462.036
+theme_override_font_sizes/font_size = 32
+text = "Fire Bender"
+
+[node name="LinkButton2" type="LinkButton" parent="Control"]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 443.0
+offset_right = 870.0
+offset_bottom = 483.0
+theme_override_font_sizes/font_size = 25
+text = "Water Blender"
+
+[connection signal="pressed" from="Control/LinkButton" to="." method="_on_link_button_pressed"]

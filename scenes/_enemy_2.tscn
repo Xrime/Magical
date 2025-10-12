@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://b0eontfv0073o"]
+
+[ext_resource type="Script" uid="uid://d3pqigu1f4uae" path="res://scenes/magic.gd" id="1_7hun0"]
+[ext_resource type="Texture2D" uid="uid://coqseoio3o7e" path="res://Assets/WaterBender/WaterBender/WaterBender (Projectile 1)/water bomb1.png" id="2_8hwvt"]
+[ext_resource type="Texture2D" uid="uid://ppi40x7n3xdm" path="res://Assets/WaterBender/WaterBender/WaterBender (Projectile 1)/water bomb2.png" id="3_a0iy4"]
+[ext_resource type="Texture2D" uid="uid://bttkl07oefl2u" path="res://Assets/WaterBender/WaterBender/WaterBender (Projectile 1)/water bomb3.png" id="4_wfqcg"]
+[ext_resource type="Texture2D" uid="uid://d0olwf275pf1m" path="res://Assets/WaterBender/WaterBender/WaterBender (Projectile 1)/water bomb4.png" id="5_j07ao"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wvmly"]
+radius = 7.0
+height = 24.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_na4cb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8hwvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_a0iy4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wfqcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_j07ao")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="_enemy2" type="Area2D"]
+z_index = 10
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_7hun0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_wvmly")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, 1)
+scale = Vector2(0.1, 0.0953124)
+sprite_frames = SubResource("SpriteFrames_na4cb")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -44,6 +44,7 @@ animations = [{
 }]
 
 [node name="enemy_magic" type="Area2D"]
+collision_layer = 8
 script = ExtResource("1_wvmly")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

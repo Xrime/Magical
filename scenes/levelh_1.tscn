@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2bax5oj87h54"]
+
+[ext_resource type="Script" uid="uid://qpelu0nj2r86" path="res://scenes/levelh_1.gd" id="1_l7rd6"]
+[ext_resource type="Texture2D" uid="uid://oe2qytwnskog" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_1.png" id="1_lbvgj"]
+
+[node name="levelh1" type="Node2D"]
+script = ExtResource("1_l7rd6")
+
+[node name="Layer1" type="Sprite2D" parent="."]
+position = Vector2(571.5, 325)
+scale = Vector2(3.65313, 3.68889)
+texture = ExtResource("1_lbvgj")
+
+[node name="LinkButton" type="LinkButton" parent="."]
+offset_left = 427.0
+offset_top = 134.0
+offset_right = 661.0
+offset_bottom = 230.0
+theme_override_font_sizes/font_size = 70
+text = "Level 1"
+
+[node name="LinkButton2" type="LinkButton" parent="."]
+offset_left = 446.0
+offset_top = 316.0
+offset_right = 680.0
+offset_bottom = 412.0
+theme_override_font_sizes/font_size = 70
+text = "Level 2"
+
+[node name="LinkButton3" type="LinkButton" parent="."]
+offset_left = 449.0
+offset_top = 479.0
+offset_right = 683.0
+offset_bottom = 575.0
+theme_override_font_sizes/font_size = 70
+text = "Level 3"
+
+[connection signal="pressed" from="LinkButton" to="." method="_on_link_button_pressed"]
+[connection signal="pressed" from="LinkButton2" to="." method="_on_link_button_2_pressed"]

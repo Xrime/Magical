@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://ulues6rs3fbr"]
+[gd_scene load_steps=23 format=4 uid="uid://ulues6rs3fbr"]
 
 [ext_resource type="Texture2D" uid="uid://oe2qytwnskog" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_1.png" id="1_1rn2m"]
 [ext_resource type="Texture2D" uid="uid://bq3int54p8pdi" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_2.png" id="2_cxios"]
@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://cgl8vxko24l2v" path="res://Magic-Cliffs-Gamekit/Magic-Cliffs-Gamekit/Assets/Environment/PNG/sea.png" id="4_ncw41"]
 [ext_resource type="Texture2D" uid="uid://1dfif11nryhs" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Tiles/brick_2.png" id="5_qgsbm"]
 [ext_resource type="Texture2D" uid="uid://ybitm6q7vyaf" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Tiles/ceiling_2.png" id="6_5hpr3"]
+[ext_resource type="PackedScene" uid="uid://bexgv2l4qv86n" path="res://scenes/player.tscn" id="7_3bd8k"]
+[ext_resource type="PackedScene" uid="uid://ctxvxdcjdcpgc" path="res://scenes/enemy_spanner.tscn" id="8_ncw41"]
+[ext_resource type="PackedScene" uid="uid://nc661nwvreca" path="res://water_area.tscn" id="9_ncw41"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xebq6"]
 texture = ExtResource("1_1rn2m")
@@ -1041,3 +1044,10 @@ shape = SubResource("RectangleShape2D_3bd8k")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
 position = Vector2(598.5, 650)
 shape = SubResource("RectangleShape2D_ncw41")
+
+[node name="Player" parent="." instance=ExtResource("7_3bd8k")]
+
+[node name="Enemy_spanner" parent="." instance=ExtResource("8_ncw41")]
+
+[node name="WaterArea" parent="." instance=ExtResource("9_ncw41")]
+position = Vector2(5, 579)

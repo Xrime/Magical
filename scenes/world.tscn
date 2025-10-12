@@ -8,6 +8,7 @@
 script = ExtResource("1_4wyf3")
 
 [node name="Enemy" parent="." instance=ExtResource("1_rwgxs")]
+magic_scene = null
 
 [node name="Player" parent="." instance=ExtResource("2_4wyf3")]
 z_index = 1

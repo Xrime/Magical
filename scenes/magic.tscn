@@ -34,7 +34,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="magic" type="Area2D"]
+[node name="_enemy" type="Area2D"]
+z_index = 10
+collision_layer = 4
+collision_mask = 2
 script = ExtResource("1_mgv3p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -44,3 +47,7 @@ shape = SubResource("CapsuleShape2D_wvmly")
 position = Vector2(-10, 1.5)
 scale = Vector2(0.6875, 0.90625)
 sprite_frames = SubResource("SpriteFrames_u87lm")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

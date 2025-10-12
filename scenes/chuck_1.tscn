@@ -1,6 +1,5 @@
-[gd_scene load_steps=17 format=4 uid="uid://c6j1cypchf6m6"]
+[gd_scene load_steps=16 format=4 uid="uid://c6j1cypchf6m6"]
 
-[ext_resource type="Script" uid="uid://du2bkx3rhxdsf" path="res://scenes/chuck_1.gd" id="1_5aul8"]
 [ext_resource type="Texture2D" uid="uid://oe2qytwnskog" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_1.png" id="1_36yyr"]
 [ext_resource type="PackedScene" uid="uid://ctxvxdcjdcpgc" path="res://scenes/enemy_spanner.tscn" id="2_a384s"]
 [ext_resource type="Texture2D" uid="uid://bq3int54p8pdi" path="res://Assets/Medieval_Castle_Asset_Pack/Medieval_Castle_Asset_Pack/Background/layer_2.png" id="2_xebq6"]
@@ -1174,7 +1173,6 @@ size = Vector2(52.5, 663.5)
 size = Vector2(1183, 35)
 
 [node name="chuck_1" type="Area2D"]
-script = ExtResource("1_5aul8")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 
@@ -1215,4 +1213,3 @@ shape = SubResource("RectangleShape2D_a384s")
 
 [node name="Player" parent="." instance=ExtResource("3_0ihha")]
 position = Vector2(-3, 156)
-magic_scene = null

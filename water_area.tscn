@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://nc661nwvreca"]
+
+[ext_resource type="Script" uid="uid://cceowpc82x3b0" path="res://water_area.gd" id="1_hw7s1"]
+[ext_resource type="Texture2D" uid="uid://cgl8vxko24l2v" path="res://Magic-Cliffs-Gamekit/Magic-Cliffs-Gamekit/Assets/Environment/PNG/sea.png" id="2_fg7yk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cwnpg"]
+size = Vector2(1154, 97)
+
+[node name="WaterArea" type="Area2D"]
+collision_layer = 16
+collision_mask = 15
+script = ExtResource("1_hw7s1")
+
+[node name="Sea" type="Sprite2D" parent="."]
+position = Vector2(435, 37)
+scale = Vector2(7.61161, 1)
+texture = ExtResource("2_fg7yk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(581, 38.5)
+shape = SubResource("RectangleShape2D_cwnpg")
