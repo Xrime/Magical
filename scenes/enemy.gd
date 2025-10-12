@@ -8,8 +8,8 @@ extends CharacterBody2D
 var player: CharacterBody2D
 
 var shoot_timer: Timer
-var is_attacking := false  # ✅ declare the flag
-@onready var sprite = $AnimatedSprite2D  # ✅ fixed reference
+var is_attacking := false
+@onready var sprite = $AnimatedSprite2D 
 
 func _ready():
 	shoot_timer = Timer.new()
