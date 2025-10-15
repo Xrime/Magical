@@ -1,37 +1,15 @@
-# 🌟 Magical World
+**Maagical World**
 
-**Magical World** is a 2D fantasy action game built in **Godot Engine (v4.4)**.
-Player explore a 2D realm, battle enemies, and survive waves of magical attacks from enemies, the enemy will always shot their magic toward the player so the player have to kill the enemy before they start shooting.
+Welcome to MAgical world is a 2D game built with Godot Engine.The game consist of different level with different dificulties also the user can decided to choose the character that they like to use in the game right now there are only two character in the game (Fire and water bender).The player has the ability to shot the enemy that randomly drop from the sky and also want to move toward the enemy to kill the player the enemy in such a wa ythat they can shot at the player with high accuracy, the player is built with different animation walk, run, jump, death and attack. The player always respawn anytime the player is kill by the enemy so there is no end to the game.
 
-The Player can decide on which magic to use, right now there only two choice of magicians, and  there are different levels each levels are places with diffrent difficulties for the player like sea in level 2 and the sea is created in such a way that it can also kill the enemy so the player has a fair chance.
+**How to play**
+Their is two ways to play magical you can install it locally to your desktop or play it online the link is provided in the realease page . When you load the game there the dashboard of the game is show ⬇️⬇️
 
-The map was created in a way the the player cannot leave the map and the player can always respawn after being killed .
-The game blends platforming, adventure, and simple AI combat mechanics.
-
----
-
-## 🧙‍♂️ Features
-
-*  **Playable Character** — movement, jump, and attack animations.
-*  **Respawn**-The player has the ability to respawn after being killed by enemies or sea
-*  **Enemy AI** — enemies patrol, chase the player, and shoot magical projectiles.
-*  **Magic System** — both player and enemies can shoot magical projectiles.
-*  **Multiple Levels** - there are just three levels for different typee of magicians
-*  **Enemy Spawner System** — enemies appear dynamically to challenge players.
-
----
-
-## 🕹️ Controls
-
-| Action               | Key                   |
-| -------------------- | --------------------- |
-| Move Left            | **A / ←**             |
-| Move Right           | **D / →**             |
-| Jump                 | w**†**          |
-|Down                  |s
-| Attack / Shoot Magic | **Spacebar** |
+<img width="1150" height="658" alt="image" src="https://github.com/user-attachments/assets/6c557b45-a718-4df8-9b9c-19005ce8de83" />
+The player can decide on the character to play with by clicking on the link, the next page with display the level so the player can also click the level .
+W or Up key can be use to jump 
+A or left 3key to move the player to the left 
+D or right key to move the player to the right
+S or down key to crouch
 
 
-## 🏗️ Built With
-* **Godot Engine 4.4
-* **GDScript**
