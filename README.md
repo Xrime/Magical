@@ -11,8 +11,11 @@ The player can decide on the character to play with by clicking on the link, the
 
 
 **W or Up key can be use to jump **
+
 **A or left 3key to move the player to the left **
+
 **D or right key to move the player to the right**
+
 **S or down key to crouch**
 
 
