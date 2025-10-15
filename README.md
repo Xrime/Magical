@@ -7,9 +7,12 @@ Their is two ways to play magical you can install it locally to your desktop or 
 
 <img width="1150" height="658" alt="image" src="https://github.com/user-attachments/assets/6c557b45-a718-4df8-9b9c-19005ce8de83" />
 The player can decide on the character to play with by clicking on the link, the next page with display the level so the player can also click the level .
-W or Up key can be use to jump 
+
+
+
+**W or Up key can be use to jump 
 A or left 3key to move the player to the left 
 D or right key to move the player to the right
-S or down key to crouch
+S or down key to crouch**
 
 
